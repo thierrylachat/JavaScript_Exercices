@@ -8,7 +8,7 @@ if (0 <= number && number <= 3) {
     alert (`Assez bien`);
 } else if (8 <= number && number <= 9) {
     alert (`Bien`);
-} else if (number = 10) {
+} else if (number == 10) {
     alert (`Excellent`);
 }
 
