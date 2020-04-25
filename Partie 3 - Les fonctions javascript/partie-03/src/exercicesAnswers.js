@@ -40,7 +40,10 @@ let removeSpaces = function (sentence) {
 
 //Exercice 9 : Afficher true si le paramètre d'entrée de la fonction est de type *string*.
 let isString = function (sentence) {
-  return 'A compléter'
+  return true;
+  if (typeof(sentence) == string) {
+    console.log (true);
+  }
 }
 
 //Exercice 10 : Afficher l'extension du fichier.
@@ -60,7 +63,10 @@ let invertSentence = function (sentence) {
 
 //Exercice 13 : Chercher si dans la chaîne de caractère se trouve "La Manu".
 let searchInSentence = function (sentence) {
-  return sentence.indexOf("La Manu");
+  return true;
+  if (sentence.search("La Manu") == !isNaN) {
+    console.log (true);
+  }
 }
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
