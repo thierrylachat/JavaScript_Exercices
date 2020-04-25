@@ -48,12 +48,12 @@ let isString = function (sentence) {
 
 //Exercice 10 : Afficher l'extension du fichier.
 let displayExtension = function (fileName) {
-  return 'A compléter';
+  return fileName.slice(15,18);
 }
 
 //Exercice 11 : Compter le nombre d'espace dans la chaîne.
 let countSpaces = function (sentence) {
-  return 'A compléter';
+  return (sentence.length - sentence.split(" "));
 }
 
 //Exercice 12 : Inverser une chaîne de caractères.
