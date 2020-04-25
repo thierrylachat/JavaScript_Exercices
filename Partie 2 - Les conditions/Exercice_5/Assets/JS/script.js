@@ -22,4 +22,6 @@ switch (day) {
     case 7:
         alert (`Dimanche`);
     break;
+    default:
+        alert (`Jour non trouvé.`);
 }

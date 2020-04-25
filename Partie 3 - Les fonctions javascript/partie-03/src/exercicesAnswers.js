@@ -1,6 +1,6 @@
 //Exercice 1 : Donner la taille de la chaîne de caractères.
 let stringLength = function (sentence) {
-  return 'A compléter';
+  return sentence.length ;
 }
 
 //Exercice 2 : Remplacer le premier "e" de la chaîne par un espace.

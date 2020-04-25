@@ -1,6 +1,6 @@
 let number = 50;
 
-// Première solution //
+// Première solution. //
 
 if (number > 21) {
     alert (`Le nombre ${number} est supérieur à 21.`);
