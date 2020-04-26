@@ -71,20 +71,20 @@ let searchInSentence = function (sentence) {
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
 let displayAbsoluteValue = function (number) {
-  return 'A compléter';
+  return Math.abs(number);
 }
 
 //Exercice 15 : Afficher les valeurs absolues de plusieurs nombres.
-let displayAbsoluteValues = function (numbersArray) {
-  return 'A compléter';
+let displayAbsoluteValues = function (numberArray) {
+  return numberArray.map(Math.abs);
 }
 
 //Exercice 16 : Calculer la surface d'un cercle en fonction de son rayon. L'arondir à l'entier le plus proche.
 let calculateArea = function (radius) {
-  return 'A compléter';
+  return Math.round(Math.PI*Math.pow(radius,2));
 }
 
 //Exercice 17 : Calculer l'hypothènuse d\'un triangle rectangle. Arrondir à l'entier inférieur.
 let calculateHypotenuse = function (a, b) {
-  return 'A compléter';
+  return Math.floor(Math.sqrt(Math.pow(a,2)+Math.pow(b,2)));
 }
