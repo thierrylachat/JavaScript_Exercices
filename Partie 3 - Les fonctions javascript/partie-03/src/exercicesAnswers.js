@@ -53,12 +53,12 @@ let displayExtension = function (fileName) {
 
 //Exercice 11 : Compter le nombre d'espace dans la chaîne.
 let countSpaces = function (sentence) {
-  return (sentence.length - sentence.split(" "));
+  return sentence.split(' ').length - 1;
 }
 
 //Exercice 12 : Inverser une chaîne de caractères.
 let invertSentence = function (sentence) {
-  return 'A compléter';
+  return sentence.split('').reverse().join('');
 }
 
 //Exercice 13 : Chercher si dans la chaîne de caractère se trouve "La Manu".
