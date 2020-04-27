@@ -65,15 +65,15 @@ let returnSentence = function (array) {
 
 //Exercice 12 : Transformer la variable string en tableau.', function() {
 let returnArray = function (string) {
-  return 'A compléter';
+  return string.split(",");
 }
 
 //Exercice 13 : Trier le tableau array.', function() {
 let sortArray = function (array) {
-  return 'A compléter';
+  return array.sort();
 }
 
 //Exercice 14 : Transformer le tableau array en chaîne de caractères', function() {
 let returnString = function (array) {
-  return 'A compléter';
+  return array.toString();
 }
