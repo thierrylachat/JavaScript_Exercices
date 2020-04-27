@@ -2,6 +2,7 @@
 let createArray = function () {
   return createArray = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
 }
+//2° solution return ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];//
 
 //Exercice 2 : Retouner le 3ème élément du tableau days', function() {
 let returnThirdElement = function (array) {
@@ -18,6 +19,8 @@ let changeSecondElement = function (array) {
   array[1] = 'php';
   return array;
 }
+//2° solution array.splice(1,1,'php');//
+//Return array; //
 
 //Exercice 5 : Ajouter ruby et python à la fin du tableau languages.', function() {
 let addAtTheEnd = function (array) {
@@ -33,13 +36,13 @@ let addAtFirst = function (array) {
 
 //Exercice 7 : Supprimer le premier élément du tableau languages.', function() {
 let removeFirstElement = function (array) {
-  array.shift('html');
+  array.shift();
   return array;
 }
 
 //Exercice 8 : Supprimer le dernier élément du tableau languages.', function() {
 let removeLastElement = function (array) {
-  array.pop('python');
+  array.pop();
   return array;
 }
 
@@ -51,10 +54,12 @@ let createPerson = function () {
   person ['city'] = 'Paris'; 
   return person;
 }
+//2° solution let person = {name: "Jean", age: 45, city: "Paris"};//
+// Return person; //
 
 //Exercice 10 : Retourner la valeur de l\'index nom du tableau person.', function() {
 let returnName = function (array) {
-  return array ['name'] = 'Jean';
+  return array ['name'];
 }
 
 //Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
@@ -77,3 +82,4 @@ let sortArray = function (array) {
 let returnString = function (array) {
   return array.toString();
 }
+//2° solution array.join(',');

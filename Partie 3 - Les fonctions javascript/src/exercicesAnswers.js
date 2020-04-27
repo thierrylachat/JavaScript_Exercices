@@ -69,7 +69,7 @@ let searchInSentence = function (sentence) {
     console.log (true);
   }
 }
-//2° solution : sentence.includes('la Manu');
+//2° solution : return sentence.includes('la Manu');
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
 let displayAbsoluteValue = function (number) {
@@ -90,3 +90,4 @@ let calculateArea = function (radius) {
 let calculateHypotenuse = function (a, b) {
   return Math.floor(Math.sqrt(Math.pow(a,2)+Math.pow(b,2)));
 }
+//2° solution return Math.floor(Math.hypot(a,b));//
