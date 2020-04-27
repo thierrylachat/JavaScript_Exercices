@@ -6,6 +6,7 @@ let stringLength = function (sentence) {
 //Exercice 2 : Remplacer le premier "e" de la chaîne par un espace.
 let replaceFirstEBySpace = function (sentence) {
   return sentence.replace("debugger","d bugger");
+  // 2° solution : return sentence.replace('e',' '); //
 }
 
 //Exercice 3 : Concaténer les deux chaînes de caractères.
@@ -16,11 +17,13 @@ let concatenateSentences = function (firstSentence, secondSentence) {
 //Exercice 4 : Afficher le cinquième caractère de la chaîne.
 let displayFifthCharacter = function (sentence) {
   return sentence.slice(4,5);
+  // 2° solution : sentence.charAt(4); //
 }
 
 //Exercice 5 : Afficher les 9 premiers caractère.
 let displayFirstNineCharacters = function (sentence) {
   return sentence.slice(0,9);
+  // 2° solution : sentence.substring(0,9); //
 }
 
 //Exercice 6 : Mettre en majuscule la chaîne.
@@ -40,15 +43,13 @@ let removeSpaces = function (sentence) {
 
 //Exercice 9 : Afficher true si le paramètre d'entrée de la fonction est de type *string*.
 let isString = function (sentence) {
-  return true;
-  if (typeof(sentence) == string) {
-    console.log (true);
-  }
+  return typeof sentence == 'string';
 }
 
 //Exercice 10 : Afficher l'extension du fichier.
 let displayExtension = function (fileName) {
   return fileName.slice(15,18);
+  //2° solution : fileName.split('.').pop();//
 }
 
 //Exercice 11 : Compter le nombre d'espace dans la chaîne.
