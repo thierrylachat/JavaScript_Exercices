@@ -1,6 +1,6 @@
 //Exercice 1 : Créer un tableau days et lui ajouter les jours de la semaine.
 let createArray = function () {
-  return createArray = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
+  return days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];
 }
 //2° solution return ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'];//
 
@@ -19,8 +19,8 @@ let changeSecondElement = function (array) {
   array[1] = 'php';
   return array;
 }
-//2° solution array.splice(1,1,'php');//
-//Return array; //
+/* 2° solution array.splice(1,1,'php');
+Return array; */
 
 //Exercice 5 : Ajouter ruby et python à la fin du tableau languages.', function() {
 let addAtTheEnd = function (array) {
@@ -54,8 +54,6 @@ let createPerson = function () {
   person ['city'] = 'Paris'; 
   return person;
 }
-//2° solution let person = {name: "Jean", age: 45, city: "Paris"};//
-// Return person; //
 
 //Exercice 10 : Retourner la valeur de l\'index nom du tableau person.', function() {
 let returnName = function (array) {
@@ -64,6 +62,9 @@ let returnName = function (array) {
 
 //Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
 let returnSentence = function (array) {
+  let name = array ["name"];
+  let age = array ["age"];
+  let city = array ["city"];
   sentence = `Bonjour, je suis ${array['name']}. J'ai ${array['age']} ans et j'habite ${array['city']}.`
   return sentence;
 }
@@ -82,4 +83,4 @@ let sortArray = function (array) {
 let returnString = function (array) {
   return array.toString();
 }
-//2° solution array.join(',');
+// 2° solution : return array.join(','); //
