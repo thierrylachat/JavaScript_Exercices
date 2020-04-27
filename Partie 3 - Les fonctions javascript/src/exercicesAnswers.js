@@ -69,6 +69,7 @@ let searchInSentence = function (sentence) {
     console.log (true);
   }
 }
+//2° solution : sentence.includes('la Manu');
 
 //Exercice 14 : Afficher la valeur absolue d'un nombre.
 let displayAbsoluteValue = function (number) {

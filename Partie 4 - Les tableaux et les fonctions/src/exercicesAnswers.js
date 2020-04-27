@@ -45,17 +45,22 @@ let removeLastElement = function (array) {
 
 //Exercice 9 : Créer un tableau associatif person. Lui ajouter les index name, age et city avec les valeurs Jean, 45, Paris.', function() {
 let createPerson = function () {
-  return 'A compléter';
+  let person = [];
+  person ['name'] = 'Jean';
+  person ['age'] = 45;
+  person ['city'] = 'Paris'; 
+  return person;
 }
 
 //Exercice 10 : Retourner la valeur de l\'index nom du tableau person.', function() {
 let returnName = function (array) {
-  return 'A compléter';
+  return array ['name'] = 'Jean';
 }
 
 //Exercice 11 : Stocker tous les index du tableau person dans des variables séparées et les retourner dans une même phrase de type : "Bonjour, je suis Jean. J\'ai 45 ans et j\'habite Paris."', function() {
 let returnSentence = function (array) {
-  return 'A compléter';
+  sentence = `Bonjour, je suis ${array['name']}. J'ai ${array['age']} ans et j'habite ${array['city']}.`
+  return sentence;
 }
 
 //Exercice 12 : Transformer la variable string en tableau.', function() {
