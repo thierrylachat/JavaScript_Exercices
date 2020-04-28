@@ -2,16 +2,15 @@ body {
     height: 100vh;
 }
 
-/* Validation du formulaire */
 
-.form-control-success {
+/* Validation du formulaire avec CSS */
+
+/* .form-control-success {
     border: 2px solid green;
     background-color: rgba(0, 128, 0, 0.4);
 }
+
 .form-control-fail {
     border: 2px solid red;
     background-color: rgba(246, 15, 7, 0.465);
-}
-
-
-
+} */

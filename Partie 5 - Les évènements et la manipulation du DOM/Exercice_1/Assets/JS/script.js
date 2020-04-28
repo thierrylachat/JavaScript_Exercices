@@ -11,4 +11,5 @@ function myFunction(){
     password_input.style.borderColor = "red";
     confirmation_password_input.style.borderColor = "red";
   }
+  
 }
