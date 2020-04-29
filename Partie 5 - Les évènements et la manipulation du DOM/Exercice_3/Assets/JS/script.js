@@ -1,31 +1,36 @@
-function myFunction(){
+let REGEX_name = /^[A-Z][a-zéèç]+(?:(?:\s|\-)[A-Z][a-zéèç]+)$/;
+let REGEX_email = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i;
+let REGEX_age = /^[0-9]{1,3}$/;
+// Autre proposition pour le REGEX email :
+//let REGEX_email = /^\w+([\.-]\w+)*\@\w+\.[a-z]{2,6}$/;
 
-
-  let name_input = document.getElementById("name");
-  let REGEX_name = /^[a-zéèç]+$/i; /^([a-z]+)([a-z ]+)$/i
- 
-  if (!REGEX_name.test(name_input)) {
-    alert ("Nom non valide.");
+function checkField(input, REGEX) {                 // ?Création checkfield? //
+  let value = input.value; 
+  // Si le texte renseigné ne matche pas avec la REGEX :
+  If (!REGEX.test(value)) {
+    // Création de la balise <span>                 // ?Pourquoi pas de <span> dans le html? //
+    let span = document.createElement('span');
+    // Ajout d'un attribut class à span
+    span.setAttribute('class','danger');            // ?class? //
+    // Ajout du contenu du texte de span
+    span.textContent = "La saisie est incorrecte !";
+    //On insert le span après le input
+    input.insertAdjacentElement ('afterend', span);
   }
-
-
-  let email_input = document.getElementById("email");
-  let REGEX_email = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/i;
- 
-  if (!REGEX_email.test(email_input)) {
-    alert ("Adresse mail non valide.");
-  }
-
-
-  let age_input = document.getElementById("age");
-  let REGEX_age = /^[0-9]{1,3}$/;
- 
-  if (!REGEX_age.test(age_input)) {
-    alert ("Âge non valide.");
-  }
-
-
 }
 
+// On sélectionne l'élément input.
+let name = document.getElementById('name');
+name.addEventListener('blur', function() {
+  checkField(name, REGEX_name);
+});
 
+let age = document.getElementById('age');
+age.addEventListener('blur', function() {
+  checkField(age, REGEX_age);
+});
 
+let email = document.getElementById('email');
+email.addEventListener('blur', function() {
+  checkField(email, REGEX_email);
+});
