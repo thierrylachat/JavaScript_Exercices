@@ -5,15 +5,17 @@ h1 {
     text-align: center;
     margin: auto;
     margin-bottom: 3em;
-    margin-top: 3em;
+    margin-top: 2em;
     width: 800px;
     border: rebeccapurple solid 3px;
 }
+
 .container {
     width: 100vh;
     display: flex;
     justify-content: center;
 }
+
 img {
     width: 200px;
     height: 360px;
