@@ -4,18 +4,18 @@ let REGEX_age = /^[0-9]{1,3}$/;
 // Autre proposition pour le REGEX email :
 //let REGEX_email = /^\w+([\.-]\w+)*\@\w+\.[a-z]{2,6}$/;
 
-function checkField(input, REGEX) {                 // ?Création checkfield? //
+function checkField(input, REGEX) {                 
   let value = input.value; 
   // Si le texte renseigné ne matche pas avec la REGEX :
-  If (!REGEX.test(value)) {
-    // Création de la balise <span>                 // ?Pourquoi pas de <span> dans le html? //
-    let span = document.createElement('span');
-    // Ajout d'un attribut class à span
-    span.setAttribute('class','danger');            // ?class? //
-    // Ajout du contenu du texte de span
-    span.textContent = "La saisie est incorrecte !";
-    //On insert le span après le input
-    input.insertAdjacentElement ('afterend', span);
+  if (!REGEX.test(value)) {
+    // Création de la balise <p>.                  
+    let p = document.createElement('p');
+    // Ajout d'un attribut class à p.
+    p.setAttribute('class','danger');              
+    // Ajout du contenu du texte de p.
+    p.textContent = "La saisie est incorrecte !";
+    //On insert le p après le input.
+    input.insertAdjacentElement ('afterend', p);
   }
 }
 
