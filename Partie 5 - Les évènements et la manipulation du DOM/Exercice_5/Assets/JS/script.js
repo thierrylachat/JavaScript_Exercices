@@ -18,13 +18,13 @@ function changeFont() {
 }
 
 // Renvoi d'un table contenant les boutons ayant l'id color.
-let buttonsColorList = document.querySelector('.color');
+let buttonsColorList = document.querySelectorAll('.color');
 buttonsColorList.forEach(function(button){
   button.addEventListener('click', changeColor);
 });
 
 //Renvoi d'un table contenant les boutons ayant l'id font.
-let buttonsStyleList = document.querySelector('.font');
+let buttonsStyleList = document.querySelectorAll('.font');
 buttonsStyleList.forEach(function(button){
   button.addEventListener('click', changeFont);
 });
