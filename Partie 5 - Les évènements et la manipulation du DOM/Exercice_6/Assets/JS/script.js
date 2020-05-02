@@ -6,7 +6,9 @@ function focusOut() {
   this.style.border = '';
 }
 
-let input = document.querySelector('.form-control');
+let input = document.querySelectorAll('input');
 
-input.addEventListener('focus', onFocus);
-input.addEventListener('blur', focusOut);
+input.forEach(function(input){
+  input.addEventListener('focus', onFocus);
+  input.addEventListener('blur', focusOut);
+});
