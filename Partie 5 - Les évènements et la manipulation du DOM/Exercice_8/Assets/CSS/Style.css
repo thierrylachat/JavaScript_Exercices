@@ -1,0 +1,12 @@
+body {
+    height: 100vh;
+}
+
+label {
+    color: indianred;
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+}
