@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+    color: teal;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: DimGrey
+}
