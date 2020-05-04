@@ -1,20 +1,12 @@
-// let firstNumber = Math.floor(Math.random()*10) + 1;
-// let secondNumber = Math.floor(Math.random()*10) + 1;
-
-// while (firstNumber / secondNumber > 1) {
-//   firstNumber /= secondNumber;
-//   console.log(firstNumber);
-// }
-
-// SOLUTION 2.
-
+// Tirage d'un nombre aléatoire entre 1 et 10.
 let firstNumber = Math.floor(Math.random()*10 + 1);
 let secondNumber = Math.floor(Math.random()*10 + 1);
 
 do {
+  //L'expression suivante est égale à : firstNumber = firstNumber * secondNumber;
   firstNumber /= secondNumber;
-  if(firstNumber < 1){
+  if (firstNumber < 1) {
     break;
   }
   console.log(firstNumber);
-} while(true);
+} while (true);
