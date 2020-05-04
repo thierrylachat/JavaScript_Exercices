@@ -14,24 +14,39 @@
     <link rel="stylesheet" href="Assets/CSS/style.css">
 
     <!-- Attention penser à mettre le bootstrap.css avant le style.css. -->
-    <title>Partie 6 - Les boucles - Exercice 1</title>
+    <title>Partie 7 - Les fonctions - Exercice 1</title>
 </head>
 
 <body>
 
-    <h1>Années bissextiles sur la période 2020-2030.</h1>
-    <table>
-        <thead>
-            <th>Années</th>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+    <div class="card text-white bg-dark mb-3 d-inline-block" style="max-width: 20rem;">
+        <div class="card-header font-weight-bold h3 bg-white text-dark">CALCULATRICE</div>
+        <div class="card-body">
+            <h4 class="card-title">Multiplication</h4>
+            <p class="card-text">
+                <form>
+                    <div class="form-group">
+                        <label for="input_1">Premier facteur</label>
+                        <input type="text" class="form-control" id="input_1" placeholder="3">
+                    </div>
+                    <div class="form-group">
+                        <label for="input_2">Deuxième facteur</label>
+                        <input type="text" class="form-control" id="input_2" placeholder="4">
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg font-weight-bold">Produit</button>
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-3" id="product" placeholder="12">
+                    </div>
+                </form>
+            </p>
+        </div>
+    </div>
 
     <!-- Javascript Bootstrap Libraries -->
     <script src="Assets/Libraries/JS/jquery-3.4.1.min.js"></script>
     <script src="Assets/Libraries/JS/bootstrap.bundle.min.js"></script>
     <script src="Assets/JS/script.js"></script>
+
 </body>
 
 </html>
