@@ -1,27 +1,8 @@
-let tbody = document.querySelector('tbody');
+let firstNumber = Math.floor(Math.random()*10) + 1;
+let secondNumber = Math.floor(Math.random()*10) + 1;
 
-// Création de la boucle.
-for (year = 2020; year <= 2030; year++) {
-
-  // Création de la ligne.
-  let tr = document.createElement('tr');
-
-  // Création de la cellule.
-  let td = document.createElement('td');
-
-  // Insertion de la date dans la cellule.
-  td.textContent = year;
-
-  // Recherche et affichage des années bissextiles.
-  if ((year % 400 == 0) || ((year % 4 == 0) && !(year % 100 == 0))) {
-    td.style.color = 'white';
-    td.style.backgroundColor = 'IndianRed';
-  }
-
-  // Insertion de la cellule dans une ligne.
-  tr.appendChild(td);
-
-  // Insertion de la ligne dans le tableau.
-  tbody.appendChild(tr);
-
+while (firstNumber / secondNumber > 1) {
+  //secondNumber = secondNumber * firstNumber;
+  firstNumber /= secondNumber;
+  console.log(firstNumber);
 }

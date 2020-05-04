@@ -19,17 +19,30 @@ let days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi','Dimanch
 // }
 
 
-// SOLUTION 2.
+// SOLUTION 2 NOK.
 
-days.forEach(function(item, index, array) {
-    document.write(item + ' ');
-});
+// days.forEach(function(item, index, array) {
+//     document.write(item + ' ');
+// });
 
-let saturday = days[5];
-let sunday = days[6];
+// let saturday = days[5];
+// let sunday = days[6];
 
-document.querySelector('saturday').style.fontWeight = 'bold';
-sunday.style.fontWeight = 'bold';
+// document.querySelector('saturday').style.fontWeight = 'bold';
+// sunday.style.fontWeight = 'bold';
 
 
+// SOLUTION 3.
 
+let div = document.createElement('div');
+
+languages.forEach(function(day) {
+    let p = document.createElement('p');
+    p.textContent = day;
+    if(day.toLowerCase() === 'samedi' || day.toLowerCase === 'dimanche') {
+        p.style.fontWeight = 'bold';
+    }
+    div.appendChild(p);
+})
+
+document.querySelector('body').insertAdjacentElement('afterbegin', div);
