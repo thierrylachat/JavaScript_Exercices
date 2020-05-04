@@ -9,7 +9,7 @@ for (x of languages) {
 
 
 
-// // SOLUTION 2 NOK
+// SOLUTION 2 NOK
 // let languages = ['html', 'css', 'javascript', 'php', 'mysql', 'c++','ruby','python'];
 // let p = document.createElement('p');
 // let body = document.createElement('body');
