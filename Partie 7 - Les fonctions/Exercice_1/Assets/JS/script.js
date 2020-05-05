@@ -1,11 +1,24 @@
-let number1 = document.getElementById('input_1');
-let number2 = document.getElementById('input_2');
-let product = number1 * number2;
+function multiply(firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+}
 
-function multiply(number1, number2) {
-  return product;
-};
-
-document.getElementsByTagName('button').addEventListener('click', multiply() {
-  document.getElementById('product').textContent = product;
+document.querySelector('#result').addEventListener('click', function() {
+    let firstNumber = document.querySelector('#input_1').value;
+    let secondNumber = document.querySelector('#input_2').value;
+    document.querySelector('#label').textContent = multiply(firstNumber, secondNumber);
 });
+
+
+/* 
+
+Solution 2 avec fonction fléchée.
+
+let multi = (firstNumber, secondNumber) => firstNumber * secondNumber;
+
+document.querySelector('#result').addEventListener('click', function () {
+    let firstNumber = document.querySelector('#input_1').value;
+    let secondNumber = document.querySelector('#input_2').value;
+    document.querySelector('#label').textContent = multi(firstNumber, secondNumber);
+});
+
+*/
