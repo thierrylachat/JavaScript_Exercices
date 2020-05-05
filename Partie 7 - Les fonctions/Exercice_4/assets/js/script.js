@@ -1,11 +1,15 @@
-let number1 = document.getElementById('input_1');
-let number2 = document.getElementById('input_2');
-let product = number1 * number2;
+// Sélection de l'image.
+let img = document.querySelector('img');
 
-function multiply(number1, number2) {
-  return product;
-};
+// Création des fonctions fléchées.
+let growthPicture = () => img.style.width = '100%';
+let resetPicture = () => img.style.width = '50%';
 
-document.getElementsByTagName('button').addEventListener('click', multiply() {
-  document.getElementById('product').textContent = product;
-});
+// Ajout des évènements.
+img.addEventListener('click', growthPicture);
+img.addEventListener('dblclick', resetPicture);
+
+// La fonction fléchée growthPicture équivaut à :
+// function growthPicture() {
+//     img.style.width = '100%';
+// }
