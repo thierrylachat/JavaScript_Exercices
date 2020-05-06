@@ -1,22 +1,21 @@
-// bonus
-function sum(firstNumber, secondNumber){
+function sum(firstNumber, secondNumber) {
     return Number(firstNumber) + Number(secondNumber);
 }
-// bonus
-function soustraction(firstNumber, secondNumber){
+
+function soustraction(firstNumber, secondNumber) {
     return firstNumber - secondNumber;
 }
-// fonction de l'exercice 1
-function multiply(firstNumber, secondNumber){
+
+function multiply(firstNumber, secondNumber) {
     return firstNumber * secondNumber;
 }
-// bonus
-function division(firstNumber, secondNumber){
+
+function division(firstNumber, secondNumber) {
     return firstNumber / secondNumber;
 }
-// bonus
-function calc(firstNumber, secondNumber, operator){
-    switch(operator){
+
+function calc(firstNumber, secondNumber, operator) {
+    switch (operator) {
         case '+':
             return sum(firstNumber, secondNumber);
         case '-':
@@ -30,7 +29,7 @@ function calc(firstNumber, secondNumber, operator){
     }
 }
 
-document.querySelector('#result').addEventListener('click', function(){
+document.querySelector('#result').addEventListener('click', function () {
     let firstNumber = document.querySelector('#firstNumber').value;
     let secondNumber = document.querySelector('#secondNumber').value;
     let operator = document.querySelector('input:checked').value;
