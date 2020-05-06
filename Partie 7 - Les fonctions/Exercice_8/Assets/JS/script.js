@@ -1,4 +1,5 @@
 let sum;
+
 // sum = function(firstNumber, secondNumber){
 //     return Number(firstNumber) + Number(secondNumber);
 // }
@@ -15,33 +16,28 @@ let square = number => number * number;
 // function sum(firstNumber, secondNumber){
 //     return Number(firstNumber) + Number(secondNumber);
 // }
-// bonus
-function soustraction(firstNumber, secondNumber){
-    return firstNumber - secondNumber;
-}
-// fonction de l'exercice 1
-function multiply(firstNumber, secondNumber){
-    return firstNumber * secondNumber;
-}
-// bonus
-function division(firstNumber, secondNumber){
-    return firstNumber / secondNumber;
-}
-// bonus
-function calc(firstNumber, secondNumber, operator){
-    switch(operator){
+
+soustraction = (firstNumber, secondNumber) => firstNumber - secondNumber;
+
+multiply = (firstNumber, secondNumber) => firstNumber * secondNumber;
+
+division = (firstNumber, secondNumber) => firstNumber / secondNumber;
+
+
+function calc(firstNumber, secondNumber, operator) {
+    switch (operator) {
         case '+':
-            return sum(firstNumber, secondNumber);
+        return sum(firstNumber, secondNumber);
         case '-':
-            return soustraction(firstNumber, secondNumber);
+        return soustraction(firstNumber, secondNumber);
         case '*':
-            return multiply(firstNumber, secondNumber);
+        return multiply(firstNumber, secondNumber);
         case '/':
-            return division(firstNumber, secondNumber);
+        return division(firstNumber, secondNumber);
         case '^':
-            return square(firstNumber);
+        return square(firstNumber);
         default:
-            return 'Error';
+        return 'Error';
     }
 }
 
