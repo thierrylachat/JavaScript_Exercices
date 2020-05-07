@@ -1,0 +1,14 @@
+#parent {
+    position:relative;
+    height:2450px;
+    width:1890px;
+    background-color:red;
+}
+
+.child {
+    color: azure;
+    position:relative;
+    top:10px;
+    width:1890px;
+    display:none;
+}

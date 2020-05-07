@@ -1,5 +1,6 @@
-// Déterminiation de la fonction qui permet de scroller en haut de l'élément.
+// Détermination de la fonction qui permet de scroller en haut de l'élément.
 function scrollSections () {
+    /*let section = this.id*/
     let section = document.getElementById('fable2');
     section.scrollIntoView(
         {block: 'start',
