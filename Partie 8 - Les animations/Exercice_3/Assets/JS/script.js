@@ -1,10 +1,11 @@
-let body = document.getElementsByTagName('body');
-let parent = document.getElementById('parent');
-let child = document.getElementsByClassName('.child');
+let body=document.getElementsByTagName("body")[0];
+let parent=document.getElementById('parent');
+let child=document.querySelector('.child');
+body.onscroll = function(){
+//console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
+if(document.documentElement.scrollTop>=child.offsetTop)//Adjust Tolerance as you want
+{
+   child.style.display="block"
+}
 
-body.onscroll = function () {
-
-    if (child.scrollTop>=child.offsetTop) {
-        child.style.display = "block";
-    }
 };
