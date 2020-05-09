@@ -6,20 +6,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap & Fontawesome CSS -->
+    <!-- Bootstrap & Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="Assets/Libraries/CSS/bootstrap.css">
-
-    <!-- ME : NEUTRALISATION DE MA BIBLIO FONTAWESOME -->
-    <!-- <link rel="stylesheet" href="Assets/Libraries/CSS/fontawesome.css"> -->
-
-    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Libraries/CSS/fontawesome.css">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="Assets/CSS/style.css">
 
     <title></title>
+
+    <style>
+        #btnScrollToTop {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e62739;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            color: #ffffff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+
 </head>
+
 
 <body>
     <h1>Germinal</h1>
@@ -246,9 +261,9 @@
         gêné par sa digestion pénible de chair humaine.
     </p>
 
-    <!-- Return to Top -->
-    <!-- ME :  REMPLACEMENT DU I POUR LE CHEVRON-->
-    <a href="javascript:" id="return-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+    <button id="btnScrollToTop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
 
     <!-- Javascript Bootstrap Libraries -->
     <script src="Assets/Libraries/JS/jquery-3.4.1.min.js"></script>
