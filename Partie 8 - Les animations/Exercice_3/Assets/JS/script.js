@@ -3,7 +3,7 @@ let parent=document.getElementById('parent');
 let child=document.querySelector('.child');
 body.onscroll = function(){
 //console.log(documenhttps://fiddle.jshell.net/3urv0tp0/#tidyt.getElementById("child-div").style.top)
-if(document.documentElement.scrollTop>=child.offsetTop)//Adjust Tolerance as you want
+if(body.scrollTop>=child.offsetTop)//Adjust Tolerance as you want
 {
    child.style.display="block"
 }
