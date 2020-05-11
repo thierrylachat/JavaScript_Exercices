@@ -2,6 +2,11 @@
 Sources : https://www.youtube.com/watch?v=qNMPcfEBmNI&feature=youtu.be
 */
 
+var cleave = new Cleave('#telNumber', {
+    phone: true,
+    phoneRegionCode: 'FR'
+});
+
 var cleave = new Cleave('#date', {
     date: true,
     delimiter: '-',
@@ -11,7 +16,7 @@ var cleave = new Cleave('#date', {
 var cleave = new Cleave('#creditCardNumber', {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
-        
+
         if (type === 'visa') {
             document.querySelector('.fa-cc-visa').classList.add('active');
         } else {

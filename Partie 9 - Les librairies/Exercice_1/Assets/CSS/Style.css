@@ -12,7 +12,6 @@ body {
 
 .active {
     color: #1a1e5a;
-    text : white;
     opacity: 1;
     transform: scale(1.3);
 }
