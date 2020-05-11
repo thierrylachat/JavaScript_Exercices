@@ -16,7 +16,7 @@ var cleave = new Cleave('#date', {
 var cleave = new Cleave('#creditCardNumber', {
     creditCard: true,
     onCreditCardTypeChanged: function (type) {
-
+        
         if (type === 'visa') {
             document.querySelector('.fa-cc-visa').classList.add('active');
         } else {

@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+}
+
+.fab {
+    font-size: 3.5em;
+    opacity: 0.3;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.active {
+    color: #1a1e5a;
+    opacity: 1;
+    transform: scale(1.3);
+}
