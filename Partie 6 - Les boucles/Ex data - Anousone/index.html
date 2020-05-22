@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Bonbon 5 euros <button type="button" class="info" data-name="Bonbon" data-price="5">+ info</button></div>
+    <div>Chocolat 2 euros <button type="button" class="info" data-name="Chocolat" data-price="2">+ info</button></div>
+    <div>Graines de tournesol 1 euro <button type="button" class="info" data-name="Graines de tournesol" data-price="1">+ info</button></div>
+
+    <script>
+        const buttonsArray = document.querySelectorAll('.info');
+        buttonsArray.forEach(button => {
+            button.addEventListener('click', function () {
+               console.log(this.dataset.price);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
